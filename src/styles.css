@@ -64,7 +64,7 @@ button {
 
 @font-face {
   font-family: 'Hackbot Free Trial';
-  src: url('/Users/sadorianr/Desktop/tech projects/portfolio/src/assets/HackbotFreeTrial-8MgA2.otf');
+  src: url('./assets/HackbotFreeTrial.otf');
 }
 
 /* contact section styles */
