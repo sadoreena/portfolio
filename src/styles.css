@@ -1,13 +1,28 @@
+
+/* navbar styles */
+
 .navbar {
-  position: fixed;
   padding: 30px;
-  top: 0;
-  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%; 
   box-sizing: border-box;
+  z-index: 100;
+}
+
+.navbar.scroll {
+  position: fixed;
+  animation: navbarScroll 0.3s;
+}
+
+@keyframes navbarScroll {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .logo {
@@ -38,10 +53,11 @@ button {
 .work-button,
 .about-button,
 .contact-button {
+  font-family: 'Hackbot Free Trial', sans-serif;
   white-space: nowrap;
   background-color: #F5F5F5;
   border-radius: 16px; 
-  padding: 10px 20px;
+  padding: 10px 25px;
   margin: 10px;
   display: inline-block;
 }
@@ -51,36 +67,148 @@ button {
   src: url('/Users/sadorianr/Desktop/tech projects/portfolio/src/assets/HackbotFreeTrial-8MgA2.otf');
 }
 
+/* contact section styles */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title, .about-title, .work-title {
+  color:#D81D68;
+  font-family: 'Manjari';
+}
+
+.contact-forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 10px;
+}
+
+.name-box,
+.email-box {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.name-box {
+  margin-right: 50px;
+}
+
+.name-email {
+  display: flex;
+  flex-direction: row;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.contact-me-button {
+  margin-top: 10px;
+  width: 100%;
+  margin-left: auto;
+  background-color: #D81D68;
+  border-radius: 0%;
+  padding: 0.75rem;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+/* about me section styles */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.about-box {
+  background-color: white;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-family: 'Courier Prime', Courier, monospace;
+  margin-bottom: 30px;
+  padding: 30px;
+  border: none;
+  border-radius: 16px;
+}
+
+/* general styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #D81D68;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #D81D68;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin: 30px;
+}
+
 .name {
-  color: #FB8DA0;
+  color: #D81D68;
   font-family: 'Hackbot Free Trial', sans-serif;
+  font-size: 400%;
+  text-shadow: #FA8DA0 4px 4px 0px;
 }
 
 .caption {
-  color: black;
-  text-shadow: -1px -1px 0 #FB8DA0;
+  color: #FB8DA0;
   font-family: 'Hackbot Free Trial', sans-serif;
+  font-size: 400%;
+  text-shadow: #D71C68 3px 3px 2px;
+
 }
 
 .description {
-  color: #D81D68;
-  max-width: 40%;
-  font-size: medium;
+  color: white;
+  max-width: 60%;
+  font-size: 120%;
   font-family: 'Courier New', Courier, monospace;
 }
 
-.about {
-  color: #D81D68;
-  font-family: 'Manjari', sans-serif;
-}
-
-.code-preview {
-  color: #D81D68;
-  font-family: 'Manjari', sans-serif;
+.name, .caption, .description {
+  margin: 10px;
+  text-align: left;
 }
 
 .switch {
-  color: #F5F5F5;
+  color: white;
+  background-color: #121212;
   max-width: 40%;
   font-size: medium;
   font-family: 'Courier New', Courier, monospace;
