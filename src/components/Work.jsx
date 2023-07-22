@@ -14,14 +14,14 @@ class Work extends Component {
       link: "https://github.com/sadoreena/CSLandingPage",
       name: "CS Landing Page",
       description: "A mockup of a fictional Stanford Computer Science course homepage. Built using HTML and CSS.",
-      imageSrc: "https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg"
+      imageSrc: "../assets/yelp.png"
     },
     {
       id: 2,
       link: "https://github.com/sadoreena/YelpClone",
       name: "Yelp Clone",
       description: "A Yelp clone built with Kotlin, the Google Maps API, and the Yelp API. Takes users to the Yelp page of their selected restaurant.",
-      imageSrc: "https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg"
+      imageSrc: "../assets/yelp.png"
     }
   ];
   

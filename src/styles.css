@@ -107,6 +107,7 @@ button {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 
@@ -119,6 +120,7 @@ button {
 
 .project-name {
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .project-description {
@@ -134,23 +136,24 @@ button {
 
 .project {
   background-color: pink;
-  max-width: 300px;
-  max-height: 300px;
-  border: 2px solid #D81D68;
-  border-radius: 0.25rem;
-  padding: 10px;
+  width: 250px;
+  height: 250px;
+  border: 3px solid #D81D68;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  
 }
 
 .project:hover .project-details {
   opacity: 1;
+  transform: scale(1);
+  transform-origin: top left; 
 }
-
 
 .project-details {
   position: absolute;
@@ -165,7 +168,9 @@ button {
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s;
+  transform: scale(0);
 }
+
 
 /* contact section styles */
 
