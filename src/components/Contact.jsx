@@ -1,12 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Contact = () => {
-  return (
-    <div className="contact-container" id="contact-me">
+class Contact extends Component {
 
-      <div className="contact-title">
-        <h1>&lt;/ Contact Me /&gt;</h1>
-      </div>
+  render() {
+    
+    return (
+      <div className="contact-container" id="contact-me">
+
+        <div className="contact-title">
+          <h1>&lt;/ Contact Me /&gt;</h1>
+        </div>
 
         <form className="contact-forms" action="https://getform.io/f/d00552f5-17c9-4233-865b-11783e0b28ff" method="POST">
 
@@ -26,13 +29,14 @@ const Contact = () => {
           <div className="message-box">
             <textarea name="message" id="message" placeholder="Message (required)" rows="10"></textarea>
           </div>
-          
+
           {/* submit button */}
           <button className="contact-me-button">Let's talk!</button>
-          
+
         </form>
       </div>
-  );
+    );
+  }
 };
 
 export default Contact;

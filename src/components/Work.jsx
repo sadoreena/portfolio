@@ -31,8 +31,8 @@ class Work extends Component {
       imageSrc: require("../assets/weather.png")
     },
     {
-      id: 2,
-      link: "https://github.com/sadoreena/weather-app",
+      id: 4,
+      link: "https://github.com/sadoreena/TipCalculator",
       name: "Tip Calculator",
       description: "A small tip calculator to calculate the total bill. Made with Kotlin.",
       imageSrc: require("../assets/tip.png")

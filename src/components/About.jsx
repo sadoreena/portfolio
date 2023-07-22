@@ -40,7 +40,7 @@ class About extends Component {
             </p>
           </div>
         ) : (
-          <div className="about-box">
+          <div className="plainview">
             <p>
               let Sadorian = &#123;<br /> <br />
               &nbsp;&nbsp;&nbsp;&nbsp;education: "Stanford University",<br />
