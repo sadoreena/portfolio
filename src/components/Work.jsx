@@ -13,16 +13,18 @@ class Work extends Component {
       id: 1,
       link: "https://github.com/sadoreena/CSLandingPage",
       name: "CS Landing Page",
-      description: " A full-stack  tracker application with APIs to add, delete, and update s. The application is built using React, Node.js, Express, and MongoDB."
-
+      description: "A mockup of a fictional Stanford Computer Science course homepage. Built using HTML and CSS.",
+      imageSrc: "../assets/yelp_clone.png"
     },
     {
       id: 2,
       link: "https://github.com/sadoreena/YelpClone",
       name: "Yelp Clone",
-      description: "An app built with Vite and React, leverages open API to generate concise summaries of lengthy articles. Users can input links, and the app processes the article and returns a summary"
-    },
+      description: "A Yelp clone built with Kotlin, the Google Maps API, and the Yelp API. Takes users to the Yelp page of their selected restaurant.",
+      imageSrc: "URL_TO_IMAGE_2"
+    }
   ];
+  
 
   handleClick = (link) => {
     window.open(link, "_blank"); // Open the link in a new tab
@@ -31,23 +33,18 @@ class Work extends Component {
   render() {
     return (
       <div className="work-container" id="my-work">
-
         <div className="work-title">
           <h1>&lt;/ My Work /&gt;</h1>
         </div>
-
-        <div className="grid mt-20 sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0">
-
-          {this.projects.map(({ id, src, link, description, name }) => (
+  
+        <div className="project-container">
+          {this.projects.map(({ id, imageSrc, link, description, name }) => (
             <div key={id} className="project">
-              <img src={src} alt="" className="project-image"/>
-              <h2 className="project-name">
-                {name}
-              </h2>
+              <img src={imageSrc} alt="project_image" className="project-image" />
+              <h2 className="project-name">{name}</h2>
               <p className="project-description">{description}</p>
-
               <button className="project-button" onClick={() => this.handleClick(link)}>
-                View More
+                View Project
               </button>
             </div>
           ))}
@@ -55,6 +52,7 @@ class Work extends Component {
       </div>
     );
   }
+  
 };
 
 export default Work;

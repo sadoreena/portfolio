@@ -69,6 +69,71 @@ button {
   src: url('./assets/HackbotFreeTrial.otf');
 }
 
+/* about me section styles */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.about-box {
+  background-color: white;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-family: 'Courier Prime', Courier, monospace;
+  margin-bottom: 30px;
+  padding: 30px;
+  border: none;
+  border-radius: 16px;
+}
+
+/* work section styles */
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-container {
+  width: 75%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-name,
+.project-description {
+  display: none;
+}
+
+.project:hover .project-name,
+.project:hover .project-description {
+  display: block;
+}
+
+
+.project {
+  background-color: pink;
+  max-width: 300px;
+  max-height: 300px;
+  border: 2px solid #D81D68;
+  border-radius: 0.25rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* contact section styles */
 
 .contact-container {
@@ -125,30 +190,6 @@ textarea {
   background-color: #D81D68;
   color: white;
   cursor: pointer;
-}
-
-/* about me section styles */
-
-.about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: black;
-  margin-bottom: 30px;
-}
-
-.about-box {
-  background-color: white;
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  font-family: 'Courier Prime', Courier, monospace;
-  margin-bottom: 30px;
-  padding: 30px;
-  border: none;
-  border-radius: 16px;
 }
 
 /* general styles */
