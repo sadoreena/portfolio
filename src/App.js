@@ -4,6 +4,7 @@ import About from './components/About';
 import Work from './components/Work';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { Analytics } from '@vercel/analytics/react';
 import './styles.css'
 
 
@@ -36,6 +37,7 @@ function App() {
       <Contact/>
       <div className="divider"></div>
       <Footer />
+      <Analytics />
     </div>
   );
 }
