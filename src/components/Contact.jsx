@@ -8,8 +8,8 @@ const Contact = () => {
         <h1>&lt;/ Contact Me /&gt;</h1>
       </div>
 
-      <div className="contact-forms">
-        <form action="https://getform.io/f/049645f9-8dd3-4ead-a466-2039520ded71" method="POST">
+        <form className="contact-forms" action="https://getform.io/f/d00552f5-17c9-4233-865b-11783e0b28ff" method="POST">
+
           <div className="name-email">
             {/* name input */}
             <div className="name-box">
@@ -26,10 +26,12 @@ const Contact = () => {
           <div className="message-box">
             <textarea name="message" id="message" placeholder="Message (required)" rows="10"></textarea>
           </div>
+          
+          {/* submit button */}
           <button className="contact-me-button">Let's talk!</button>
+          
         </form>
       </div>
-    </div>
   );
 };
 

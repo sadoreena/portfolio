@@ -1,7 +1,8 @@
 import './App.css';
 import NavBar from './components/NavBar.jsx';
-import Contact from './components/Contact';
 import About from './components/About';
+import Work from './components/Work';
+import Contact from './components/Contact';
 import './styles.css'
 
 
@@ -28,6 +29,8 @@ function App() {
       </div>
       <div className="divider"></div>
       <About/>
+      <div className="divider"></div>
+      <Work />
       <div className="divider"></div>
       <Contact/>
     </div>
