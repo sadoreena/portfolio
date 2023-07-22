@@ -3,6 +3,7 @@ import NavBar from './components/NavBar.jsx';
 import About from './components/About';
 import Work from './components/Work';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './styles.css'
 
 
@@ -33,6 +34,8 @@ function App() {
       <Work />
       <div className="divider"></div>
       <Contact/>
+      <div className="divider"></div>
+      <Footer />
     </div>
   );
 }
