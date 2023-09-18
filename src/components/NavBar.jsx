@@ -1,27 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-scroll';
 import '../styles.css';
-
-function getDate() {
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  const today = new Date();
-  return today.toLocaleDateString('en-US', options);
-}
+import logo from '../assets/logo.png';
 
 const NavBar = () => {
-  const [currentDate, setCurrentDate] = useState(getDate());
-
   return (
-    <nav className="navbar" style={{ backgroundColor: `black` }}>
-      <div>
-        <p>FIGMA.OS</p>
+    <nav className="navbar">
+      <div className="logo">
+        <Link to="App" smooth={true} duration={500}>
+          <img src={logo} alt="Logo" className="logo" />
+        </Link>
       </div>
+      <div className="button-container">
 
-      <div>
-        <p>DESIGN 170 *** {currentDate} *** LIVE FROM SF</p>
-      </div>
+        <Link className="about-button" to="about-me" smooth={true} duration={500}>
+          About
+        </Link>
 
-      <div>
-        <p>11:00AM GMT-5</p>
+        <Link className="work-button" to="my-work" smooth={true} duration={500}>
+          Work
+        </Link>
+
+        <Link className="contact-button" to="contact-me" smooth={true} duration={500}>
+          Contact
+        </Link>
       </div>
     </nav>
   );
