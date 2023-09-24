@@ -30,7 +30,7 @@ If you find any issues with the website or have suggestions for improvements, fe
 
 ## Contact
 
-If you'd like to reach out to me, you can contact me via email at your.email@example.com or connect with me on [LinkedIn](https://www.linkedin.com/in/sadorian-robertson/) and [GitHub](https://github.com/sadoree a).
+If you'd like to reach out to me, you can contact me via email at your.email@example.com or connect with me on [LinkedIn](https://www.linkedin.com/in/sadorian-robertson/) and [GitHub](https://github.com/sadoreena).
 
 ---
 
